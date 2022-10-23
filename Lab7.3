@@ -1,0 +1,18 @@
+#include <locale.h>
+#include <stdio.h>
+#include <conio.h>
+int main()
+{
+    setlocale(LC_ALL, "rus");
+    char key;
+    while (1)
+    {
+        key = _getch();
+        if (key == 1)
+        {
+            printf("Остановка выполнения кода.");
+            return 0;
+        }
+        printf("Вы нажали: %c\n", key);
+    }
+}
